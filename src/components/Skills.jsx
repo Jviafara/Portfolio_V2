@@ -80,11 +80,11 @@ const Skills = () => {
     ];
 
     return (
-        <div id="Skills" className="w-full h-full py-10 mt-10 relative">
+        <div id="Skills" className="w-full py-10 p-2 md:p-8 mt-10 relative">
             <div className="max-w-screen-lg mx-auto pt-16 flex flex-col justify-center w-full h-full text-black">
                 <div>
                     <UnderLine>
-                        <p className="text-3xl font-bold border-b-4 border-gray-500 pt-2 inline sm:text-4xl">
+                        <p className="text-2xl md:text-3xl font-bold border-b-4 border-gray-500 pt-2 inline sm:text-4xl">
                             Skils and Experience
                         </p>
                     </UnderLine>
@@ -94,23 +94,23 @@ const Skills = () => {
                 </div>
                 <div>
                     <UnderLine>
-                        <p className="text-3xl font-bold pt-2 inline sm:text-4xl">
+                        <p className="text-xl md:text-2xl font-bold pt-2 inline sm:text-4xl">
                             BackEnd
                         </p>
                     </UnderLine>
-                    <div className="w-full flex gap-8 text-center py-8 px-12 sm:px-0">
+                    <div className="w-full flex flex-wrap justify-center gap-2 md:gap-8 text-center py-8 px-12 sm:px-0">
                         {backEnd.map(({ id, title, src, style }) => (
                             <div
                                 key={id}
                                 className={
-                                    'shadow-lg hover:scale-110 duration-500 p-8 rounded-lg w-auto bg-white bg-opacity-70' +
+                                    'shadow-lg hover:scale-110 duration-500 mt-2 p-2 rounded-lg w-[45%] md:w-[20%] lg:w-[15%] bg-white bg-opacity-70 flex items-center justify-center' +
                                     ' ' +
                                     style
                                 }>
                                 <img
                                     src={src}
                                     alt={title}
-                                    className="w-20 mx-auto"
+                                    className="md:w-[85%]"
                                 />
                                 {/* <p className="mt-4">{title}</p> */}
                             </div>
@@ -120,25 +120,24 @@ const Skills = () => {
 
                 <div>
                     <UnderLine>
-                        <p className="text-3xl font-bold pt-2 inline sm:text-4xl">
+                        <p className="text-xl md:text-2xl font-bold pt-2 inline sm:text-4xl">
                             FrontEnd
                         </p>
                     </UnderLine>
-                    <div className="w-full flex gap-8 text-center py-8 px-12 sm:px-0">
+                    <div className="w-full flex flex-wrap items-center justify-between gap-2 md:gap-8 text-center py-8 px-12">
                         {frontEnd.map(({ id, title, src, style }) => (
                             <div
                                 key={id}
                                 className={
-                                    'shadow-lg hover:scale-110 duration-500 p-8 rounded-lg w-auto bg-white bg-opacity-70' +
+                                    'shadow-lg hover:scale-110 duration-500 mt-2  p-2 rounded-lg w-[45%] md:w-[20%] lg:w-[15%] bg-white bg-opacity-70 flex items-center justify-center' +
                                     ' ' +
                                     style
                                 }>
                                 <img
                                     src={src}
                                     alt={title}
-                                    className="w-20 mx-auto"
+                                    className="md:w-[85%] "
                                 />
-                                {/* <p className="mt-4">{title}</p> */}
                             </div>
                         ))}
                     </div>
@@ -146,24 +145,24 @@ const Skills = () => {
 
                 <div>
                     <UnderLine>
-                        <p className="text-3xl font-bold pt-2 inline sm:text-4xl">
+                        <p className="text-xl md:text-2xl font-bold pt-2 inline sm:text-4xl">
                             Tools
                         </p>
                     </UnderLine>
                 </div>
-                <div className="w-full flex  gap-8 text-center py-8 px-12 sm:px-0">
+                <div className="w-full flex flex-wrap items-center justify-center gap-2 md:gap-8 text-center py-8 px-12 sm:px-0">
                     {tools.map(({ id, title, src, style }) => (
                         <div
                             key={id}
                             className={
-                                'shadow-lg hover:scale-110 duration-500 p-8 rounded-lg w-auto bg-white bg-opacity-70' +
+                                'shadow-lg hover:scale-110 duration-500 mt-2 p-2 rounded-lg w-[45%] md:w-[20%] lg:w-[15%] bg-white bg-opacity-70 flex items-center justify-center' +
                                 ' ' +
                                 style
                             }>
                             <img
                                 src={src}
                                 alt={title}
-                                className="w-20 mx-auto"
+                                className="md:w-[85%] "
                             />
                             {/* <p className="mt-4">{title}</p> */}
                         </div>
