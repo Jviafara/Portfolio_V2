@@ -32,6 +32,7 @@ const NavBar = () => {
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }
+        setNav(false);
     };
 
     return (
@@ -65,6 +66,7 @@ const NavBar = () => {
                     {links.map(({ id, link }) => (
                         <li
                             key={id}
+                            onClick={() => handleClick(link)}
                             className="px-4 cursor-pointer capitalize py-6 text-4xl">
                             {link}
                         </li>

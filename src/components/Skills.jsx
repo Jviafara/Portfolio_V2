@@ -112,7 +112,6 @@ const Skills = () => {
                                     alt={title}
                                     className="md:w-[85%]"
                                 />
-                                {/* <p className="mt-4">{title}</p> */}
                             </div>
                         ))}
                     </div>
